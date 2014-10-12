@@ -1,29 +1,45 @@
-<!Ex3 Internet Technologies - DOCTYPE html>
+<!Ex4 Internet Technologies - DOCTYPE html>
 <html>
 <head>
-    <title>Ex3 Tester documentation</title>
+    <title>Ex4 Tester documentation</title>
 </head>
 <body>
 	<h1>===========================<br>
-==== Testers Documentation ====<br>===========================</h1>
-	<p> tester.js contains 10 tests that examins the following things:  </p>
-<p>1) Sending a legal request - Checks that the server deals with a legal http request.  </p>
+	==== Testers Documentation ====<br>===========================</h1>
+	<p> tester.js contains 2 parts: Tester for static abilities and tester for dynamic abilities. Each part contains 10 tests.</p>
+	<h2> Static tester - examins the following things:  </h2>
+    <p>1) Sending a legal request - Checks that the server deals with a legal http request.  </p>
     <p>2) Unexisting file Request - Checks that the server returns "404 Not Found" status when the 
       request is for a file that doesn't exists in the directory.  </p>
     <p>3) Too many arguments in the request initial line - Checks that the server doesn't accept 
       requests that contains more than the 3 arguments in the conventional http protocol.  </p>
     <p>4) Too little arguments in the request initial line - Checks that the server doesn't accept 
       requests that contains less than the 3 arguments in the conventional http protocol.  </p>
-<p>5) Illegal HTTP version - Checks that the server doesn't accept requests from an illegal http 
+    <p>5) Illegal HTTP version - Checks that the server doesn't accept requests from an illegal http 
       version.  </p>
     <p>6) Illegal HTTP version parameter - Checks that the server doesn't support http requests that 
-      has an illegal parameter at the http version.      </p>
+      has an illegal parameter at the http version.
     <p>7) Not a GET method - Checks that the server doesn't support http requests that are not GET 
-      requests. </p>
+      requests.  </p>
     <p>8) Illegal method parameter - Checks that the server doesn't support http requests that has an 
       illegal method parameter.  </p>
     <p>9) Ignore multiple spaces - Checks that the server deals with multiple spaces, that those
       spaces don't harm the parsing of the request. A legal request will be responded correctly.  </p>
-<p>10) Send multiple requests at once - Checks that the server deals with input data that contains 
-several http requests.</p>
+    <p>10) Send multiple requests at once - Checks that the server deals with input data that contains 
+      several http requests.</p>
+	  
+	<h2> Dynamic tester - examins the following things:  </h2>
+    <p>1) Params of Request - Checks that the server succeed in getting the params from the URL.  </p>
+    <p>2) query of Request - Checks that the server parse the query correctly from the URL.  </p>
+    <p>3) Body of Request - Checks that the server parse the request body correctly. </p>
+    <p>4) Cookies of Request - Checks that the server parse the cookies correctly. </p>
+    <p>5) Path of Request - Checks that the server parse the path correctly. </p>
+    <p>6) Param function of Request - Checks that the server's param() function returns value of the given key parameter. </p>
+    <p>7) Is function of Request - Checks that the server's is() function returns whether the value of the 
+		Content-Type header is equal to the function parameter.  </p>
+    <p>8) Set function of Response 2 parameters - Checks that the server's set() function sets the 
+		value of the given header parameter to be the second parameter. </p>
+    <p>9) Set function of Response JSON parameter - Checks that the server's set() function deals 
+		correctly with parameters that comes in a JSON object. </p>
+    <p>10) Status function of Response - Checks that the server's status() function sets the response status. </p>
 </body>
