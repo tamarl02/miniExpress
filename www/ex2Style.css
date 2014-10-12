@@ -1,0 +1,259 @@
+/* Ex2 style */
+
+/* Canvas general style attributes */
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #4aacc5;
+}
+/* Login line style */
+
+input[type="text"], input[type="password"], button { 
+	outline: none; 
+}
+
+#loginLine{
+	z-index: 1000;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	text-align: right;
+	padding: 10px 5% 10px 0;
+	border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    background: linear-gradient(#52bad4, #3b9ba4);
+}
+
+/* Page submit style in general, when passing over it and while pressing. */
+
+#login {
+	cursor: pointer;
+	border-radius: 7px;
+	border-style: solid;
+	font-size: 14px;
+	padding: 2px 22px 2px 22px;
+	border-width: 3px;
+	border-color: white;
+	color: white;
+    background-color: #4f81bc;
+    box-shadow: 2px 3px 4px #367592;
+}
+
+
+#login:hover {
+    text-decoration: none;
+    color: #CCFFCC;
+    background-color: #6096d6;
+    box-shadow: 3px 5px 5px #367592;
+}
+
+#login:active {
+    text-decoration: none;
+    color: #CCFFCC;
+    background-color: #6096d6;
+    box-shadow: 0 0 10px #367592;
+}
+
+/* Determines the input box appearance.  */
+input {
+	padding: 3px;
+	margin: 0 15px 0 7px;
+	border-color: black;
+	border-width: 2px;
+}
+
+/*^*^*^*^*^*^*^* Homepage Style! *^*^*^*^*^*^*^*/
+
+/* Defines headlines style */
+h1{
+	clear: both;
+	float: left;
+	margin-top: 100px;
+	letter-spacing: 0.05em;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+h2{
+	text-align: center;
+}
+
+/* Defines the profile picture style */
+#myImage{
+	margin-top: 100px;
+	float: right;
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg); 
+	-ms-transform: rotate(10deg);
+	border-style: groove;
+	border-width: 4px;
+	padding: 15px;
+	border-color: white;
+	background-color: #FAF0E6;
+	margin-bottom: 30px;
+	box-shadow: 4px 6px 5px #367592;
+}
+
+/* Page hyperlink style in general, when passing over it and while pressing. */
+a {
+	font-style: italic;
+    color: #CCFFCC;
+    text-decoration: none;
+}
+
+a:active {
+	color: #bfd7bf;
+	font-weight: bold;
+}
+
+a:hover {
+	cursor: pointer;
+    color: #001d48;
+	font-weight: bold;
+    text-shadow: 0 0 3px #fcffec;
+}
+
+/* Cleares the lft side of paragraphs */
+p { 
+	clear: left;
+}
+
+/* Leaves clean edges, from right and left. */
+p, table, img, h1 {
+	margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Table style definition, the table position is in the middle of the canvas. */
+.column1 {
+	margin-left: 1.5em;
+	padding: 15px 0 60px 0;
+	text-align: center;
+}
+
+.column2 {
+	padding: 0em 1em 0em 1em;
+}
+
+#linksTable{
+	clear: both;
+	margin-left:auto; 
+    margin-right:auto;
+    padding: 5px;
+	border-style: double;
+    border-width: 2px;
+    border-color: #52bad4;
+    background: #42acb6;
+    width: 60%;
+}
+
+#linksTable th {
+	padding: 15px 0px 15px 0px;
+   	background: linear-gradient(#52bad4, #3b9ba4);
+	width:170px;
+}
+
+/*  Determines the footer look,
+	footer is the amusing thing that was positioned in the bottom od the page. */
+#footer {
+	margin-top: 1.5em;
+	border-top-style: solid;
+	border-color: black;
+    border-top-width: 2px;
+	padding: 2em 0 1em 0;
+}
+
+#footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*^*^*^*^*^*^*^* Calculature Style! *^*^*^*^*^*^*^*/
+
+/* Determines the size and position of the calculator. */
+#calcObj {
+	padding: 30px 30px 30px 30px;
+	width:500px;
+	margin:100 auto;
+}
+
+/* Moves the headline to center and create 3D text effect. */
+#calcHeadline{
+	margin: 0 auto;
+	padding: 30px 30px 30px 30px;
+	font-size: 60px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+    	0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1),  0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 
+		0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+/*^*^* Calculators buttons settings.. *^*^*/
+
+/* Creates circle shape for the relevant buttons. */
+.num, #clear, #settings{
+	box-shadow: 0px 0px 2px #F3E0FF;
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	border-width: 3px;
+	border-color: #006666;
+	margin: 10px 10px 10px 10px;
+	font-size:30px;
+	color:white;
+	text-align:center;
+	background: linear-gradient(5deg, rgba(127,255,212,0.5), rgba(30,144,255,0.3));
+}
+
+ #clear, #settings{
+ 	font-size:15px;
+ 	font-weight: bold;
+ }
+ 
+.num:hover, #settings:hover, #clear:hover{
+	background: linear-gradient(30deg, rgba(127,255,212,0.8), rgba(30,144,255,0.6));
+	color:#CCFFCC;
+}
+
+.num:active{
+	color:#5EFFC4;
+	background: linear-gradient(60deg, rgba(127,255,212,1), rgba(30,144,255,0.8));
+}
+
+#numberInput:hover, #numberInput:active, #multiply:hover, #add:hover{
+	background: linear-gradient(30deg, rgba(127,255,212,0.8), rgba(30,144,255,0.6));
+}
+
+#multiply:active, #add:active, #settings:active, #clear:active{
+	background: linear-gradient(60deg, rgba(127,255,212,1), rgba(30,144,255,1));
+	color: black;
+}
+
+#multiply, #add{
+	font-size: 22px;
+	color: white;
+	background: linear-gradient(125deg, rgba(127,255,212,0.4), rgba(30,144,255,0.4));
+	border-color: black;
+}
+
+/*^*^* Styles the input and output boxes. *^*^*/
+.calcIO{
+	border-style: groove;
+	min-width:150px;
+	max-width:150px;
+	padding: 3px 5px 3px 5px;
+	margin: 2px 2px 2px 2px;
+	border-color: #006666;
+	border-width: 3px;
+	font-size: 20px;
+	color:black;
+	background: linear-gradient(125deg, rgba(127,255,212,0.4), rgba(30,144,255,0.4));
+}
+
+
+
+
